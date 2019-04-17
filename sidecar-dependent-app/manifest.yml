@@ -1,0 +1,13 @@
+applications:
+- name: sidecar-dependent-app
+  disk_quota: 1G
+  instances: 1
+  memory: 256M
+  env:
+    CONFIG_SERVER_PORT: 8082
+  stack: cflinuxfs3
+  sidecars:
+  - name: config-server
+    process_types:
+    - web
+    command: './config-server'
