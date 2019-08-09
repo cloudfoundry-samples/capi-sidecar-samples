@@ -2,11 +2,11 @@ applications:
   - name: sidecar-dependent-java-app
     disk_quota: 1G
     instances: 1
-    memory: 1G 
+    memory: 1G
     env:
       CONFIG_SERVER_PORT: 8082
     sidecars:
       - name: config-server
-        process_types:
-          - web
-        command: './config-server'
+        process_types: [ 'web']
+        command: './config-server-sidecar/config-server'
+        memory: 256MB # allocate 1/4 of the total app memory for the sidecar

@@ -12,3 +12,7 @@ A simple Golang binary that emulates a "configuration server" for the parent app
 
 ### sidecar-dependent-app
 A simple Sinatra app that calls out to the `config-server-sidecar` binary and echoes back its response.
+
+### sidecar-dependent-java-app
+A simple Spring Boot app that calls out to the `config-server-sidecar` binary and echoes back its response.
+**Note** that the manifest reserves some memory for the sidecar - if this is not specified, the Java Buildpack will consume all available memory allocated to the app.
