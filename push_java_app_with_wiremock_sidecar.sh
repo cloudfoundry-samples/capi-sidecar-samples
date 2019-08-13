@@ -4,10 +4,10 @@ set -e
 
 APP_NAME="wiremock-dependent-java-app"
 JAVA_APP_PATH="wiremock-dependent-java-app"
-JAVA_SIDECAR_PATH="java-config-server-sidecar"
+JAVA_SIDECAR_PATH="wiremock-sidecar"
 JAVA_APP_MANIFEST_PATH="manifest.yml"
 JAVA_APP_JAR="build/libs/wiremock-dependent-java-app-0.0.1-SNAPSHOT.jar"
-JAVA_CONFIG_JAR="build/libs/java-config-server-sidecar-0.0.1-SNAPSHOT.jar"
+JAVA_CONFIG_JAR="build/libs/wiremock-sidecar-0.0.1-SNAPSHOT.jar"
 
 function clean() {
     cf delete -f "${APP_NAME}"

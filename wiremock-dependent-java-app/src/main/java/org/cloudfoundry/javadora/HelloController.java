@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @RequestMapping("/")
     public String greeting() {
-         return "Hello I am a sidecar-dependent java app.  Visit <a href=\"/config\">the config endpoint</a> to see me retrieve a value from my sidecar!";
+         return "Hello I am a wiremock sidecar dependent java app.  Visit <a href=\"/config\">the config endpoint</a> to see me retrieve a value from my sidecar!";
     }
 }

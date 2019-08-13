@@ -3,4 +3,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'java-config-server-sidecar'
+rootProject.name = 'wiremock-sidecar'
